@@ -1,0 +1,5 @@
+pulp
+requests
+google-genai
+python-dotenv
+pytest
