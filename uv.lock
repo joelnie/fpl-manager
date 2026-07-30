@@ -308,6 +308,12 @@ dev = [
     { name = "pytest-mock" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "pytest" },
+    { name = "pytest-mock" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "google-genai", specifier = ">=0.1.1" },
@@ -319,6 +325,12 @@ requires-dist = [
     { name = "requests", specifier = ">=2.31.0" },
 ]
 provides-extras = ["dev"]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "pytest", specifier = ">=8.0.0" },
+    { name = "pytest-mock", specifier = ">=3.12.0" },
+]
 
 [[package]]
 name = "google-auth"
